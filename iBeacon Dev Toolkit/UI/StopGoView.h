@@ -1,5 +1,5 @@
 //
-//  DtopGoView.h
+//  StopGoView.h
 //  iBeacon Dev Toolkit
 //
 //  Created by Douglas Pedley on 1/28/14.
@@ -8,6 +8,15 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface DtopGoView : NSView
+typedef enum
+{
+    iBDT_SGButtonState_GO = 0,
+    iBDT_SGButtonState_STOP = 1,
+    iBDT_SGButtonState_ERROR = 2,
+} iBDT_SGButtonState;
+
+@interface StopGoView : NSView
+
+@property (nonatomic, assign) iBDT_SGButtonState buttonState;
 
 @end

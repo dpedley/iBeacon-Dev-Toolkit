@@ -8,8 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class BeaconSimulator;
+
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (nonatomic, strong) BeaconSimulator *simulator;
 
 @end

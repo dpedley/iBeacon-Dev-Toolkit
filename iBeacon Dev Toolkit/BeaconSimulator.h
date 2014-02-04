@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BeaconSimulator : NSObject
+@interface BeaconSimulator : NSWindow
+
+- (void)writeSettings;
 
 @end
